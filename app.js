@@ -19,9 +19,3 @@ ws.onmessage = (e) => {
 
   lastPrice = price;
 };
-
-if ((stockPriceEl.style.color = "limegreen")) {
-  console.log("up");
-} else if ((stockPriceEl.style.color = "red")) {
-  console.log("down");
-}
