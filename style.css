@@ -1,0 +1,75 @@
+body {
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+  font-family: monospace;
+  background: #222;
+  overflow: hidden;
+}
+
+.title {
+  position: relative;
+}
+
+h2 {
+  font-size: 3rem;
+  text-align: center;
+  color: rgb(168, 74, 255);
+  border: 3px solid purple;
+  padding: 0.5em 1em;
+}
+#coin-img {
+  max-height: 200px;
+  max-width: 200px;
+  position: absolute;
+  opacity: 0.3;
+  top: 0;
+  animation: coin-anim 5s ease-in-out infinite alternate forwards;
+}
+
+@keyframes coin-anim {
+  0% {
+    left: 0%;
+  }
+  100% {
+    transform: translateX(200%);
+  }
+}
+
+p {
+  display: grid;
+  place-content: center;
+  font-size: 4rem;
+  border: 3px solid;
+  min-height: 300px;
+  min-width: 300px;
+  text-align: center;
+  overflow: hidden;
+  background: url(./moondoge.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  fill-opacity: 0.2;
+}
+.up {
+  background: url(./moondoge.png);
+}
+.down {
+  background: url(./sad.png);
+}
+
+#bg-doge-left {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translateX(-15em);
+  opacity: 0.3;
+}
+
+#bg-doge-right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translateX(15em) scaleX(-1);
+  opacity: 0.3;
+}
