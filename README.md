@@ -1,6 +1,6 @@
 # live-doge-tracker
 
-## live site https://livedoge.netlify.app/
+## [live site](https://livedoge.netlify.app/)
 
 Live Dogecoin tracker using websocket from bincance.com 
 
